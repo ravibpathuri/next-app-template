@@ -1,5 +1,6 @@
 import { Title, Text, Anchor } from '@mantine/core';
 import classes from './Welcome.module.css';
+import { Counter } from '../Counter';
 
 export function Welcome() {
   return (
@@ -7,7 +8,7 @@ export function Welcome() {
       <Title className={classes.title} ta="center" mt={100}>
         Welcome to{' '}
         <Text inherit variant="gradient" component="span" gradient={{ from: 'pink', to: 'yellow' }}>
-          Mantine
+          Refer Your Buddy
         </Text>
       </Title>
       <Text color="dimmed" ta="center" size="lg" maw={580} mx="auto" mt="xl">
@@ -18,6 +19,7 @@ export function Welcome() {
         </Anchor>
         . To get started edit page.tsx file.
       </Text>
+      <Counter />
     </>
   );
 }
